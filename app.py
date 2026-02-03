@@ -19,7 +19,7 @@ def index():
         elif guess > number:
             session["message"] = "Too High ❌"
         else:
-            session["message"] = "🎉 Correct! You Win! Developer CU is happy!"
+            session["message"] = "🎉 Correct! You Win! Developer CU made you happy!"
             session.pop("number")
 
     return render_template("index.html", message=session.get("message", ""))
